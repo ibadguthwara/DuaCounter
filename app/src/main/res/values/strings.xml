@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dua Counter</string>
+
+    <string name="riwayat_hadits">Riwayat Hadits</string>
+
+    <string name="judul_istighfar">Istighfar</string>
+    <string name="judul_tasbih">Tasbih</string>
+    <string name="judul_tahlil">Tahlil</string>
+    <string name="judul_lailatul_qodr">Lailatul Qodr</string>
+    <string name="judul_mendoakan_orang_yang_sakit">Mendoakan Orang Yang Sakit</string>
+    <string name="judul_sholat_istikhoroh">Doa Sholat Istikhoroh</string>
+
+    <string name="txt_mulai">Mulai</string>
+
+</resources>
