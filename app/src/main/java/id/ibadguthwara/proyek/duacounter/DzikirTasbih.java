@@ -12,29 +12,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class DzikirTasbih extends AppCompatActivity {
 
-    ImageButton imageBtnKurangi;
+    ImageButton imageBtnKurangi, getar, tombol;
     Button btnTambahi;
     TextView jumlah_hitung_dzikir_1;
     Integer valueJumlahHitung = 0;
     Vibrator vibrator;
-    ImageButton getar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dzikir_tasbih);
 
-        getar = (ImageButton) findViewById(R.id.btn_getar);
-
-        // tombol kurang dan tambah hitungan counter
+        //
         imageBtnKurangi = findViewById(R.id.btn_kurangi_1);
         btnTambahi = findViewById(R.id.btn_tambahi_1);
         jumlah_hitung_dzikir_1 = findViewById(R.id.jumlah_hitung_dzikir_1);
+        getar = (ImageButton) findViewById(R.id.btn_getar);
+        tombol = (ImageButton) findViewById(R.id.btn_open_informasi_hadits);
 
+        //
         imageBtnKurangi.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.O)
             @Override
@@ -51,6 +50,7 @@ public class DzikirTasbih extends AppCompatActivity {
             }
         });
 
+        //
         btnTambahi.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.O)
             @Override
@@ -58,18 +58,28 @@ public class DzikirTasbih extends AppCompatActivity {
                 if (vibrator != null){
                     vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
                 }
-                if (valueJumlahHitung > 99){
-                    Toast.makeText(getApplicationContext(), "Sudah Mencapai 100", Toast.LENGTH_LONG).show();
-                    valueJumlahHitung = 99;
-                }
                 valueJumlahHitung += 1;
                 jumlah_hitung_dzikir_1.setText(valueJumlahHitung.toString());
             }
         });
 
 
+        //
+        getar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (vibrator == null){
+                    vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    getar.setImageDrawable(getDrawable(R.drawable.ic_vibrate_on));
+                }else {
+                    vibrator = null;
+                    getar.setImageDrawable(getDrawable(R.drawable.ic_vibrate_off));
+                }
+            }
+        });
 
-        ImageButton tombol = (ImageButton) findViewById(R.id.btn_open_informasi_hadits);
+
+        //
         tombol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,23 +94,8 @@ public class DzikirTasbih extends AppCompatActivity {
                     public void onClick(View v){
                         dialog.dismiss();
                     }
-
                 });
                 dialog.show();
-            }
-        });
-
-        // mengubah warna dari button getar
-        getar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (vibrator == null){
-                    vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                    getar.setImageDrawable(getDrawable(R.drawable.ic_vibration_blue));
-                }else {
-                    vibrator = null;
-                    getar.setImageDrawable(getDrawable(R.drawable.ic_vibration));
-                }
             }
         });
     }

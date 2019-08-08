@@ -66,7 +66,14 @@
             android:id="@+id/btn_getar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_vibration"
+            android:src="@drawable/ic_vibrate_off"
+            android:layout_marginEnd="5dp"
+            android:backgroundTintMode="screen"/>
+        <ImageButton
+            android:id="@+id/btn_lampu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lightbulb_on_outline"
             android:backgroundTintMode="screen"/>
     </LinearLayout>
     <RelativeLayout
