@@ -42,16 +42,9 @@
             android:id="@+id/btn_kurangi_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/ic_undo"
             android:layout_marginEnd="5dp"
-            android:backgroundTintMode="screen"
-            android:src="@drawable/ic_undo" />
-        <ImageButton
-            android:id="@+id/btn_open_informasi_hadits"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:backgroundTintMode="screen"
-            android:src="@drawable/ic_info_outline" />
+            android:backgroundTintMode="screen"/>
         <ImageButton
             android:id="@+id/btn_getar"
             android:layout_width="wrap_content"
@@ -60,11 +53,10 @@
             android:layout_marginEnd="5dp"
             android:backgroundTintMode="screen"/>
         <ImageButton
-            android:id="@+id/btn_lampu"
+            android:id="@+id/btn_open_informasi_hadits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_lightbulb_on_outline"
-            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_info_outline"
             android:backgroundTintMode="screen"/>
         <TextView
             android:id="@+id/jumlah_hitung_dzikir_1"
