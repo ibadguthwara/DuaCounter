@@ -54,7 +54,7 @@
                 android:orientation="vertical"
                 android:layout_marginTop="7dp"
                 android:background="@color/colorWhite"
-                android:padding="10dp">
+                android:padding="7dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -68,8 +68,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
                 android:background="@color/colorWhite"
-                android:padding="10dp">
+                android:padding="7dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
