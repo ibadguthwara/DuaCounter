@@ -3,12 +3,15 @@
 
     <string name="riwayat_hadits">Riwayat Hadits</string>
 
-    <string name="judul_istighfar">Istighfar</string>
-    <string name="judul_tasbih">Tasbih</string>
-    <string name="judul_tahlil">Tahlil</string>
-    <string name="judul_lailatul_qodr">Lailatul Qodr</string>
-    <string name="judul_mendoakan_orang_yang_sakit">Mendoakan Orang Yang Sakit</string>
-    <string name="judul_sholat_istikhoroh">Doa Sholat Istikhoroh</string>
+    <string name="judul_dzikir_istighfar">Istighfar</string>
+    <string name="judul_dzikir_tasbih">Tasbih</string>
+    <string name="judul_dzikir_tahlil">Tahlil</string>
+    <string name="judul_dzikir_lailatul_qodr">Lailatul Qodr</string>
+    <string name="judul_doa_pr_13">Pengamalan Rutin 13</string>
+    <string name="judul_doa_pagi_dan_sore">Doa Pagi dan Sore</string>
+    <string name="judul_doa_berpergian">Doa Berpergian</string>
+    <string name="judul_doa_mendoakan_orang_yang_sakit">Mendoakan Orang Yang Sakit</string>
+    <string name="judul_doa_sholat_istikhoroh">Doa Sholat Istikhoroh</string>
 
     <string name="txt_mulai">Mulai</string>
 

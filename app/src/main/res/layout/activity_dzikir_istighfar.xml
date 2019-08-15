@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/judul_istighfar"
+        android:text="@string/judul_dzikir_istighfar"
         android:textColor="@color/colorNamaDoa"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -62,7 +62,7 @@
             android:src="@drawable/ic_vibrate_off"
             android:layout_marginEnd="5dp"
             android:backgroundTintMode="screen"/>
-        <!-- tombol lampu
+        <!-- tombol lampu -->
         <ImageButton
             android:id="@+id/btn_lampu"
             android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
             android:src="@drawable/ic_lightbulb_on_outline"
             android:layout_marginEnd="5dp"
             android:backgroundTintMode="screen"/>
-        -->
+
         <ImageButton
             android:id="@+id/btn_open_informasi_hadits"
             android:layout_width="wrap_content"

@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/judul_lailatul_qodr"
+        android:text="@string/judul_dzikir_lailatul_qodr"
         android:textColor="@color/colorNamaDoa"
         android:textAlignment="center"
         android:textSize="20sp"

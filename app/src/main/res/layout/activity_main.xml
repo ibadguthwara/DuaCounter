@@ -55,7 +55,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="@string/judul_istighfar"
+                        android:text="@string/judul_dzikir_istighfar"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
                 </RelativeLayout>
@@ -113,7 +113,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginTop="0dp"
-                        android:text="@string/judul_tasbih"
+                        android:text="@string/judul_dzikir_tasbih"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
                 </RelativeLayout>
@@ -169,7 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="@string/judul_tahlil"
+                        android:text="@string/judul_dzikir_tahlil"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
                 </RelativeLayout>
@@ -224,7 +224,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="@string/judul_lailatul_qodr"
+                        android:text="@string/judul_dzikir_lailatul_qodr"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
                 </RelativeLayout>
@@ -266,9 +266,9 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/colorWhite"
+                android:gravity="center_vertical"
                 android:orientation="vertical"
                 android:padding="8dp">
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -280,13 +280,85 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="0dp"
-                        android:text="@string/judul_mendoakan_orang_yang_sakit"
+                        android:text="@string/judul_doa_pr_13"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 
                     <!-- Button Mulai -->
                     <ImageButton
                         android:id="@+id/btn_mulai_doa_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTintMode="add"
+                        android:src="@drawable/ic_chevron_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TextView Nama DOa -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="@string/judul_doa_pagi_dan_sore"
+                        android:textColor="@color/colorNamaDoa"
+                        android:textSize="18sp" />
+
+                    <!-- Button Mulai -->
+                    <ImageButton
+                        android:id="@+id/btn_mulai_doa_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTintMode="add"
+                        android:src="@drawable/ic_chevron_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TextView Nama DOa -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="@string/judul_doa_berpergian"
+                        android:textColor="@color/colorNamaDoa"
+                        android:textSize="18sp" />
+
+                    <!-- Button Mulai -->
+                    <ImageButton
+                        android:id="@+id/btn_mulai_doa_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -317,13 +389,49 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="0dp"
-                        android:text="@string/judul_sholat_istikhoroh"
+                        android:text="@string/judul_doa_sholat_istikhoroh"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 
                     <!-- Button Mulai -->
                     <ImageButton
-                        android:id="@+id/btn_mulai_doa_2"
+                        android:id="@+id/btn_mulai_doa_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTintMode="add"
+                        android:src="@drawable/ic_chevron_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TextView Nama DOa -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="@string/judul_doa_mendoakan_orang_yang_sakit"
+                        android:textColor="@color/colorNamaDoa"
+                        android:textSize="18sp" />
+
+                    <!-- Button Mulai -->
+                    <ImageButton
+                        android:id="@+id/btn_mulai_doa_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"

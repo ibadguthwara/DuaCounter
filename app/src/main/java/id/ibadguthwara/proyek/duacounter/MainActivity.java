@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         doa1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DoaMendoakanOrangYangSakit.class);
+                Intent intent = new Intent(MainActivity.this, DoaPR13.class);
                 startActivity(intent);
             }
         });
@@ -64,7 +64,34 @@ public class MainActivity extends AppCompatActivity {
         doa2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DoaPagiDanSore.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton doa3 = findViewById(R.id.btn_mulai_doa_3);
+        doa3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DoaBerpergian.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton doa4 = findViewById(R.id.btn_mulai_doa_4);
+        doa4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DoaSholatIstikhoroh.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton doa5 = findViewById(R.id.btn_mulai_doa_5);
+        doa5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DoaMendoakanOrangYangSakit.class);
                 startActivity(intent);
             }
         });

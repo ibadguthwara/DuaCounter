@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorAbu"
-    tools:context=".DoaSholatIstikhoroh">
+    tools:context=".DoaPagiDanSore">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="0dp"
-                android:text="@string/judul_doa_sholat_istikhoroh"
+                android:text="@string/judul_doa_pagi_dan_sore"
                 android:textColor="@color/colorNamaDoa"
                 android:textSize="20sp" />
 
@@ -58,7 +58,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_doa_sholat_istikhoroh"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"/>
@@ -74,7 +73,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_doa_sholat_istikhoroh_arti"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"/>
