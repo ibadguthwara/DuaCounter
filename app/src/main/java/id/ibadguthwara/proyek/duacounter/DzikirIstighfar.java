@@ -4,7 +4,6 @@ import android.annotation.TargetApi;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Build;
-import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,7 +39,8 @@ public class DzikirIstighfar extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (vibrator != null){
-                    vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
+                    getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                    vibrator.vibrate(30);
                 }
                 valueJumlahHitung -= 1;
                 if(valueJumlahHitung < 0 ){
@@ -57,7 +57,8 @@ public class DzikirIstighfar extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (vibrator != null){
-                    vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
+                    getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                    vibrator.vibrate(30);
                 }
                 valueJumlahHitung += 1;
                 jumlah_hitung_dzikir_1.setText(valueJumlahHitung.toString());

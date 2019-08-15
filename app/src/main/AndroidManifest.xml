@@ -11,26 +11,36 @@
         android:roundIcon="@mipmap/ic_logo_apps_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DoaBerpergian"></activity>
-        <activity android:name=".DoaPagiDanSore" />
-        <activity android:name=".DoaPR13" />
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DzikirIstighfar" />
-        <activity android:name=".DzikirTasbih" />
-        <activity android:name=".DoaSholatIstikhoroh" />
-        <activity android:name=".DoaMendoakanOrangYangSakit" />
-        <activity android:name=".DzikirTahlil" />
-        <activity android:name=".DzikirLailatulQodr" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DzikirIstighfar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DzikirTasbih"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DzikirTahlil"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DzikirLailatulQodr"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DoaPR13"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DoaPagiDanSore"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DoaBerpergian"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DoaSholatIstikhoroh"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DoaMendoakanOrangYangSakit"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
