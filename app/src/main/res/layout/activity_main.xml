@@ -258,7 +258,7 @@
                         android:text="@string/txt_mulai" />
                 </RelativeLayout>
             </LinearLayout>
-
+<!--
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -273,7 +273,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <!-- TextView Nama DOa -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -284,7 +283,6 @@
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 
-                    <!-- Button Mulai -->
                     <ImageButton
                         android:id="@+id/btn_mulai_doa_1"
                         android:layout_width="wrap_content"
@@ -294,7 +292,7 @@
                         android:src="@drawable/ic_chevron_right" />
                 </RelativeLayout>
             </LinearLayout>
-
+-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -316,7 +314,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="0dp"
-                        android:text="@string/judul_doa_pagi_dan_sore"
+                        android:text="@string/judul_doa_ketika_bepergian"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 
@@ -352,7 +350,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="0dp"
-                        android:text="@string/judul_doa_berpergian"
+                        android:text="@string/judul_doa_sholat_istikhoroh"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 
@@ -389,7 +387,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="0dp"
-                        android:text="@string/judul_doa_sholat_istikhoroh"
+                        android:text="@string/judul_doa_mendoakan_orang_yang_sakit"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 
@@ -425,7 +423,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="0dp"
-                        android:text="@string/judul_doa_mendoakan_orang_yang_sakit"
+                        android:text="@string/judul_doa_sholat_mayit"
                         android:textColor="@color/colorNamaDoa"
                         android:textSize="18sp" />
 

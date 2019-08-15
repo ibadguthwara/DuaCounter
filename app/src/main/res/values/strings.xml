@@ -7,12 +7,21 @@
     <string name="judul_dzikir_tasbih">Tasbih</string>
     <string name="judul_dzikir_tahlil">Tahlil</string>
     <string name="judul_dzikir_lailatul_qodr">Lailatul Qodr</string>
+
     <string name="judul_doa_pr_13">Pengamalan Rutin 13</string>
-    <string name="judul_doa_pagi_dan_sore">Doa Pagi dan Sore</string>
-    <string name="judul_doa_berpergian">Doa Berpergian</string>
-    <string name="judul_doa_mendoakan_orang_yang_sakit">Mendoakan Orang Yang Sakit</string>
+    <string name="judul_doa_ketika_bepergian">Doa Ketika Bepergian</string>
     <string name="judul_doa_sholat_istikhoroh">Doa Sholat Istikhoroh</string>
+    <string name="judul_doa_mendoakan_orang_yang_sakit">Mendoakan Orang Yang Sakit</string>
+    <string name="judul_doa_sholat_mayit">Doa Sholat Mayit</string>
 
     <string name="txt_mulai">Mulai</string>
+    <string name="panduan_bacaan_sholat_mayit">Urutan Bacaan Sholat Mayit</string>
+    <string name="panduan_bacaan_sholat_mayit_detail">
+        Sholat 4 rakaat tanpa ruku dan sujud\n
+        1. Membaca Surat Alfatihah\n
+        2. Membaca Sholawat Nabi\n
+        3. Membaca Doa Mayit\n
+        4. Salam
+    </string>
 
 </resources>

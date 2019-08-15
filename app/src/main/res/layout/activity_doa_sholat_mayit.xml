@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorAbu"
-    tools:context=".DoaBerpergian">
+    tools:context=".DoaSholatMayit">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="0dp"
-                android:text="@string/judul_doa_berpergian"
+                android:text="@string/judul_doa_sholat_mayit"
                 android:textColor="@color/colorNamaDoa"
                 android:textSize="20sp" />
 
@@ -55,10 +55,34 @@
                 android:layout_marginTop="7dp"
                 android:background="@color/colorWhite"
                 android:padding="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panduan_bacaan_sholat_mayit"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panduan_bacaan_sholat_mayit_detail"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp"
+                android:background="@color/colorWhite"
+                android:padding="7dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:src="@drawable/img_doa_sholat_mayit"
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"/>
             </LinearLayout>
@@ -74,6 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:src="@drawable/img_doa_sholat_mayit_arti"
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"/>
             </LinearLayout>

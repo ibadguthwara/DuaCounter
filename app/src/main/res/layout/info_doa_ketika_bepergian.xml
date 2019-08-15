@@ -1,44 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorAbu"
-    tools:context=".DoaPagiDanSore">
-
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:background="@color/colorWhite"
-        android:gravity="center_vertical">
-
+        android:padding="7dp">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="7dp">
-
+            android:layout_height="wrap_content">
             <!-- TextView Nama DOa -->
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="0dp"
-                android:text="@string/judul_doa_pagi_dan_sore"
-                android:textColor="@color/colorNamaDoa"
-                android:textSize="20sp" />
+                android:text="@string/riwayat_hadits"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
 
-            <!-- Button Suara -->
             <ImageButton
-                android:id="@+id/btn_open_informasi_hadits"
+                android:id="@+id/btn_close_informasi_hadits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_info_outline"
                 android:layout_alignParentEnd="true"
-                android:backgroundTintMode="screen"/>
+                android:padding="5dp"
+                android:backgroundTintMode="screen"
+                android:src="@drawable/ic_close"/>
         </RelativeLayout>
     </LinearLayout>
     <ScrollView
@@ -52,31 +47,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="7dp"
                 android:background="@color/colorWhite"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
                 android:padding="7dp">
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/img_info_doa_ketika_bepergian_dalil"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="7dp"
-                android:layout_marginBottom="7dp"
-                android:background="@color/colorWhite"
-                android:padding="7dp">
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/img_info_doa_ketika_bepergian_arti"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

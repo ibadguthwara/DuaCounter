@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+/*
         ImageButton doa1 = findViewById(R.id.btn_mulai_doa_1);
         doa1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+*/
         ImageButton doa2 = findViewById(R.id.btn_mulai_doa_2);
         doa2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DoaPagiDanSore.class);
+                Intent intent = new Intent(MainActivity.this, DoaKetikaBepergian.class);
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         doa3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DoaBerpergian.class);
+                Intent intent = new Intent(MainActivity.this, DoaSholatIstikhoroh.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         doa4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DoaSholatIstikhoroh.class);
+                Intent intent = new Intent(MainActivity.this, DoaMendoakanOrangYangSakit.class);
                 startActivity(intent);
             }
         });
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         doa5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DoaMendoakanOrangYangSakit.class);
+                Intent intent = new Intent(MainActivity.this, DoaSholatMayit.class);
                 startActivity(intent);
             }
         });
