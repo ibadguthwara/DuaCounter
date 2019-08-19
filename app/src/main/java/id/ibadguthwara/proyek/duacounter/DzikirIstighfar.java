@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class DzikirIstighfar extends AppCompatActivity {
 
-    ImageButton imageBtnKurangi, getar, tombol;
+    ImageButton imageBtnKurangi, getar, tombol, replay;
     Button btnTambahi;
     TextView jumlah_hitung_dzikir_1;
     Integer valueJumlahHitung = 0;
@@ -28,6 +28,7 @@ public class DzikirIstighfar extends AppCompatActivity {
 
         //
         imageBtnKurangi = findViewById(R.id.btn_kurangi_1);
+        replay = findViewById(R.id.btn_replay);
         btnTambahi = findViewById(R.id.btn_tambahi_1);
         jumlah_hitung_dzikir_1 = findViewById(R.id.jumlah_hitung_dzikir_1);
         getar = (ImageButton) findViewById(R.id.btn_getar);
@@ -50,6 +51,38 @@ public class DzikirIstighfar extends AppCompatActivity {
 
             }
         });
+
+        //
+        replay.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  /* inisialisasi custom dialog */
+                  final Dialog dialog = new Dialog(DzikirIstighfar.this);
+                  dialog.setContentView(R.layout.info_replay_verifikasi);
+
+                  /* tombol ya */
+                  Button buttonYes = (Button) dialog.findViewById(R.id.btn_replay_yes);
+                  buttonYes.setOnClickListener(new View.OnClickListener() {
+                      @Override
+                      public void onClick(View v) {
+                          valueJumlahHitung = 0;
+                          jumlah_hitung_dzikir_1.setText(valueJumlahHitung.toString());
+                          dialog.dismiss();
+                      }
+                  });
+
+                  /* tombol tidak */
+                  Button buttonNo = (Button) dialog.findViewById(R.id.btn_replay_no);
+                  buttonNo.setOnClickListener(new View.OnClickListener() {
+                      @Override
+                      public void onClick(View v) {
+                          dialog.dismiss();
+                      }
+                  });
+                  dialog.show();
+              }
+        });
+
 
         //
         btnTambahi.setOnClickListener(new View.OnClickListener() {

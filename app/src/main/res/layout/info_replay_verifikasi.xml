@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAbu"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginStart="0dp"
+        android:text="@string/txt_replay_verifikasi"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- TextView Nama DOa -->
+        <Button
+            android:id="@+id/btn_replay_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="YA"
+            android:background="@color/colorPrimary"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btn_replay_no"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="TIDAK"
+            android:background="@color/colorRed"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</LinearLayout>
