@@ -12,9 +12,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class DzikirIstighfar extends AppCompatActivity {
 
-    ImageButton imageBtnKurangi, getar, tombol, replay;
+    ImageButton imageBtnKurangi, getar, tombol, replay, lampu;
     Button btnTambahi;
     TextView jumlah_hitung_dzikir_1;
     Integer valueJumlahHitung = 0;
@@ -33,6 +37,7 @@ public class DzikirIstighfar extends AppCompatActivity {
         jumlah_hitung_dzikir_1 = findViewById(R.id.jumlah_hitung_dzikir_1);
         getar = (ImageButton) findViewById(R.id.btn_getar);
         tombol = (ImageButton) findViewById(R.id.btn_open_informasi_hadits);
+        lampu = (ImageButton) findViewById(R.id.btn_lampu);
 
         //
         imageBtnKurangi.setOnClickListener(new View.OnClickListener() {
@@ -113,6 +118,20 @@ public class DzikirIstighfar extends AppCompatActivity {
             }
         });
 
+        //
+        lampu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (vibrator == null){
+                    vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    lampu.setImageDrawable(getDrawable(R.drawable.ic_lightbulb_off_outline));
+                }else {
+                    vibrator = null;
+                    lampu.setImageDrawable(getDrawable(R.drawable.ic_lightbulb_on_outline));
+                }
+            }
+        });
+
 
         //
         tombol.setOnClickListener(new View.OnClickListener() {
@@ -133,5 +152,12 @@ public class DzikirIstighfar extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+        // === Tanggal ===
+        Calendar calendar1 = Calendar.getInstance();
+        SimpleDateFormat sdf1 = new SimpleDateFormat("EEEE, dd MMMM yyyy", Locale.getDefault());
+        String strdate1 = sdf1.format(calendar1.getTime());
+        TextView txtHari = findViewById(R.id.txt_tanggal);
+        txtHari.setText(strdate1);
     }
 }
